@@ -1,0 +1,22 @@
+{
+  "final_model": "fastText category classifier + dynamic shortlist-5 + base GLiNER2",
+  "proxy_golden": {
+    "rows_test": 800,
+    "category_accuracy_at_1": 0.92125,
+    "category_recall_at_3": 0.96875,
+    "span_f1": 0.70346,
+    "attribute_f1": 0.767384,
+    "hallucination_rate": 0.166667
+  },
+  "latency_t4_ms": {
+    "fasttext_p50": 0.01964,
+    "end_to_end_p50": 27.00411,
+    "end_to_end_p95": 40.406514
+  },
+  "lora_experiment": {
+    "train_examples": 221438,
+    "base_span_f1": 0.70346,
+    "lora_span_f1": 0.659604,
+    "decision": "keep base GLiNER2"
+  }
+}

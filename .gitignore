@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Models and private artifacts
+artifacts/*
+!artifacts/README.md
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Raw/private data
+data/*
+!data/README.md
+*.parquet
+*.pkl
+*.pickle
+*.zip
+
+# Experiment outputs generated locally
+wandb/
+runs/
+checkpoints/
+*.log
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
